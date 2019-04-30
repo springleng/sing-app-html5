@@ -21,6 +21,20 @@
             */
         </script>
         <script src="../js/charts/d3-version-wrapper.js"></script>
+
+    <style>
+        .login-page {
+            background: url(../img/bg-login.jpg) no-repeat center center fixed; 
+            min-height: 380px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .login-page .page-footer{
+            color: #fff !important;
+        }
+    </style>
     </head>
     <body class="login-page">
             <div class="theme-helper">
@@ -110,12 +124,6 @@
                         <h3>Login to your Sing App</h3>
                     </header>
                     <div class="widget-body">
-                        <p class="widget-login-info">
-                            Use Facebook, Twitter or your email to sign in.
-                        </p>
-                        <p class="widget-login-info">
-                            Don't have an account? Sign up now!
-                        </p>
                         <form class="login-form mt-lg">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username">
@@ -125,7 +133,6 @@
                             </div>
                             <div class="clearfix">
                                 <div class="btn-toolbar float-right">
-                                    <button type="button" class="btn btn-default btn-sm">Create an Account</button>
                                     <a class="btn btn-inverse btn-sm" href="../dashboard/index.html">Login</a>
                                 </div>
                             </div>
