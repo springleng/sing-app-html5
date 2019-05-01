@@ -5,9 +5,9 @@ $(function(){
             scaleColors: ['#C8EEFF', '#0071A4'],
             normalizeFunction: 'polynomial',
             focusOn:{
-                x: 0.5359,
+                x: 0.1359,
                 y: 0.4,
-                scale: 2.5
+                scale: 1.5
             },
             zoomMin:0.85,
             hoverColor: false,
@@ -37,9 +37,18 @@ $(function(){
                     "stroke-width": 5
                 }
             },
+            onMarkerClick: function(e, code){
+                if(code =="25" ||code =="26" ||code =="27" ||code =="28")
+                {
+                    window.location.href = "../dashboard/visits.html";
+                }
+                if(code =="29")
+                {
+                    window.location.href = "../dashboard/widgets.html";
+                }
+              },
             backgroundColor: '#eee',
             markers: [
-                {latLng: [41.90, 12.45], name: 'Vatican City'},
                 {latLng: [43.73, 7.41], name: 'Monaco'},
                 {latLng: [-0.52, 166.93], name: 'Nauru'},
                 {latLng: [-8.51, 179.21], name: 'Tuvalu'},
@@ -64,7 +73,12 @@ $(function(){
                 {latLng: [15.3, -61.38], name: 'Dominica'},
                 {latLng: [-20.2, 57.5], name: 'Mauritius'},
                 {latLng: [26.02, 50.55], name: 'Bahrain'},
-                {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'}
+                {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'},
+                {latLng: [40.73, -73.93], name: 'New York City'},
+                {latLng: [41.081757, -81.511452], name: 'Akron'},
+                {latLng: [40.167206, -105.101929], name: 'Longmont'},
+                {latLng: [29.749907, -95.358421], name: 'Houston'},
+                {latLng: [33.8460, -118.1562], name: 'Lakewood Matual'},
             ]
         });
     }
