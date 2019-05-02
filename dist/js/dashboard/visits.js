@@ -37,6 +37,17 @@ $(function(){
                     attrsHover : {
                         "stroke-width" : 1,
                         animDuration : 100
+                    },
+                    eventHandlers: {
+                        mouseover: function(e, id){
+                            state = id;
+                        },
+                        click: function(e, code){
+                            if(code =="lm")
+                            {
+                                window.location.href = "../dashboard/widgets.html";
+                            }
+                          },
                     }
                 },
                 zoom : {
