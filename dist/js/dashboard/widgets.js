@@ -27,7 +27,7 @@ $(function(){
     }
 
     function initChangesChart(){
-        var chartHeight = 100;
+        /***var chartHeight = 100;
         var seriesData = [ [], [], [], [], [] ];
         var random = new Rickshaw.Fixtures.RandomData(10000);
 
@@ -83,7 +83,7 @@ $(function(){
             pixelsPerTick: chartHeight
         });
 
-        yAxis.render();
+        yAxis.render();**/
 
     }
 
@@ -127,7 +127,7 @@ $(function(){
             data2.push([i, Math.floor(4 * i) + random()])
         }
 
-        function _initChart(){
+        /**function _initChart(){
             $.plot($("#chart-stats-simple"), [{
                 data: data2, showLabels: true, label: "Visitors", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
             },{
@@ -164,7 +164,7 @@ $(function(){
 
         _initChart();
 
-        SingApp.onResize(_initChart);
+        SingApp.onResize(_initChart);**/
     }
 
     function initSalesChart2(){
@@ -181,7 +181,7 @@ $(function(){
         for (i = 0; i < 25; i++){
             data2.push([i, Math.floor(4 * i) + random()])
         }
-         function _initChart(){
+       /**  function _initChart(){
              $.plot($("#chart-stats-simple-2"), [{
                  data: data2, showLabels: true, label: "Visitors", labelPlacement: "below", canvasRender: true, cColor: "#FFFFFF"
              },{
@@ -218,11 +218,11 @@ $(function(){
 
         _initChart();
 
-        SingApp.onResize(_initChart);
+        SingApp.onResize(_initChart);**/
     }
 
     function initRealTime1(){
-        "use strict";
+        /**"use strict";
 
         var seriesData = [ [], [] ];
         var random = new Rickshaw.Fixtures.RandomData(30);
@@ -276,7 +276,7 @@ $(function(){
             random.addData(seriesData);
             graph.update();
 
-        }, 1000 );
+        }, 1000 );**/
     }
 
     function initYearsMap(){
