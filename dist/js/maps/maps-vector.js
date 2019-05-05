@@ -48,31 +48,58 @@ $(function(){
               },
             backgroundColor: '#eee',
             markers: [
+                /** North America **/
+                {latLng: [34.05, -118.24], name: 'Los Angeles'},
+                {latLng: [41.87, -87.62], name: 'Chicago'},
+                {latLng: [33.74, -84.38], name: 'Atlanta'},
+                {latLng: [42.36, -71.05], name: 'Boston'},
+                {latLng: [40.71, -74.00], name: 'New York'},
+
+                /** Europe**/
+                {latLng: [42.5, 1.51], name: 'Andorra'},                                
                 {latLng: [43.73, 7.41], name: 'Monaco'},
-                {latLng: [-0.52, 166.93], name: 'Nauru'},
-                {latLng: [-8.51, 179.21], name: 'Tuvalu'},
-                {latLng: [43.93, 12.46], name: 'San Marino'},
                 {latLng: [47.14, 9.52], name: 'Liechtenstein'},
-                {latLng: [7.11, 171.06], name: 'Marshall Islands'},
-                {latLng: [17.3, -62.73], name: 'Saint Kitts and Nevis'},
-                {latLng: [3.2, 73.22], name: 'Maldives'},
+                {latLng: [43.93, 12.46], name: 'San Marino'},
                 {latLng: [35.88, 14.5], name: 'Malta'},
-                {latLng: [12.05, -61.75], name: 'Grenada'},
-                {latLng: [13.16, -61.23], name: 'Saint Vincent and the Grenadines'},
-                {latLng: [13.16, -59.55], name: 'Barbados'},
-                {latLng: [17.11, -61.85], name: 'Antigua and Barbuda'},
-                {latLng: [-4.61, 55.45], name: 'Seychelles'},
-                {latLng: [7.35, 134.46], name: 'Palau'},
-                {latLng: [42.5, 1.51], name: 'Andorra'},
-                {latLng: [14.01, -60.98], name: 'Saint Lucia'},
-                {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},
+
+                /** Middle East **/
+                {latLng: [26.02, 50.55], name: 'Bahrain'},
+
+                /** Asia **/
                 {latLng: [1.3, 103.8], name: 'Singapore'},
+                {latLng: [28.61, 77.20], name: 'New Delhi'},
+                {latLng: [39.90, 116.40], name: 'Beijing'},
+                {latLng: [47.88, 106.90], name: 'Ulaanbaatar'},
+
+                
+                
+                /** Pacific **/
+                {latLng: [-0.52, 166.93], name: 'Nauru'},
+                {latLng: [-8.51, 179.21], name: 'Tuvalu'},                
+                {latLng: [7.11, 171.06], name: 'Marshall Islands'},
+                {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},                
                 {latLng: [1.46, 173.03], name: 'Kiribati'},
                 {latLng: [-21.13, -175.2], name: 'Tonga'},
-                {latLng: [15.3, -61.38], name: 'Dominica'},
-                {latLng: [-20.2, 57.5], name: 'Mauritius'},
-                {latLng: [26.02, 50.55], name: 'Bahrain'},
-                {latLng: [0.33, 6.73], name: 'São Tomé and Príncipe'},
+
+                /** South America **/
+                {latLng: [-15.82, -47.92], name: 'Brasilia'},
+                {latLng: [-25.26, -57.57], name: 'Asuncion'},
+                {latLng: [-34.60, -58.38], name: 'Buenos Aires'},
+
+                /** Africa **/
+                {latLng: [6.52, 3.37], name: 'Lagos'},
+                {latLng: [30.04, 31.23], name: 'Cairo'},
+                {latLng: [-4.44, 15.26], name: 'Buenos Aires'},
+                {latLng: [-8.81, 13.23], name: 'Luanda'},
+
+                /** Russia **/
+                {latLng: [48.70, 44.51], name: 'Volgograd'},
+                {latLng: [62.03, 129.67], name: 'Yakutsk'},
+
+                /** Australia **/
+                {latLng: [-33.86, 151.20], name: 'Sydney'},
+                {latLng: [-31.95, 115.86], name: 'Perth'},
+                
             ]
         });
     }
