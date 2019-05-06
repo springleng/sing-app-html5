@@ -88,10 +88,26 @@ $(function(){
     }
 
     function initChangesYearChart(){
+        // var $el = $('#chart-changes-year'),
+        //     data = [67,6,2,4,5,8,6,8],
+        //     dataMax = _(data).max(),
+        //     backgroundData = data.map(function(){return dataMax});
+
+
         var $el = $('#chart-changes-year'),
-            data = [3,6,2,4,5,8,6,8],
+            data = [87,91,83,78,88,89,73,81],
             dataMax = _(data).max(),
             backgroundData = data.map(function(){return dataMax});
+
+        // $el.sparkline(backgroundData,{
+        //     type: 'bar',
+        //     height: 26,
+        //     barColor: Sing.colors['gray-200'],
+        //     barWidth: 7,
+        //     barSpacing: 5,
+        //     chartRangeMin: _(data).min(),
+        //     tooltipFormat: new $.SPFormatClass('%')
+        // });
 
         $el.sparkline(backgroundData,{
             type: 'bar',
@@ -100,8 +116,8 @@ $(function(){
             barWidth: 7,
             barSpacing: 5,
             chartRangeMin: _(data).min(),
-            tooltipFormat: new $.SPFormatClass('')
-        });
+            tooltipFormat: "% filled"
+ });
 
         $el.sparkline(data,{
             composite: true,
