@@ -25,15 +25,15 @@ $(function(){
             },
             markerStyle: {
                 initial: {
-                    fill: Sing.colors['brand-danger'],
-                    stroke: Sing.darken(Sing.colors['brand-danger'],.1),
+                    fill: '#62bd19',
+                    stroke: '#ffffff',
                     "fill-opacity": 1,
                     "stroke-width": 4,
                     "stroke-opacity": 0.2,
                     r: 5
                 },
                 hover: {
-                    stroke: 'black',
+                    stroke: '#ffffff',
                     "stroke-width": 5
                 }
             },
@@ -71,16 +71,6 @@ $(function(){
                 {latLng: [39.90, 116.40], name: 'Beijing'},
                 {latLng: [47.88, 106.90], name: 'Ulaanbaatar'},
 
-                
-                
-                /** Pacific **/
-                {latLng: [-0.52, 166.93], name: 'Nauru'},
-                {latLng: [-8.51, 179.21], name: 'Tuvalu'},                
-                {latLng: [7.11, 171.06], name: 'Marshall Islands'},
-                {latLng: [6.91, 158.18], name: 'Federated States of Micronesia'},                
-                {latLng: [1.46, 173.03], name: 'Kiribati'},
-                {latLng: [-21.13, -175.2], name: 'Tonga'},
-
                 /** South America **/
                 {latLng: [-15.82, -47.92], name: 'Brasilia'},
                 {latLng: [-25.26, -57.57], name: 'Asuncion'},
@@ -111,3 +101,4 @@ $(function(){
     pageLoad();
     SingApp.onPageLoad(pageLoad);
 });
+
