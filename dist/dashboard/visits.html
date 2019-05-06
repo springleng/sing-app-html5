@@ -14,6 +14,7 @@
         <meta name="author" content="Flatlogic LLC">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="refresh" content="5">
         <script>
             /* yeah we need this empty stylesheet here. It's cool chrome & chromium fix
             chrome fix https://code.google.com/p/chromium/issues/detail?id=167083
@@ -27,14 +28,14 @@
                 cursor: pointer;
             }
             path {
-                cursor: pointer;
+                cursor: pointer;   
             }
         </style>
     </head>
     <body class="">
         <!--
           Main sidebar seen on the left. may be static or collapsing depending on selected state.
-
+        
             * Collapsing - navigation automatically collapse when mouse leaves it and expand when enters.
             * Static - stays always open.
         -->
@@ -62,23 +63,8 @@
                     <!-- #notifications-dropdown-menu goes here when screen collapsed to xs or sm -->
                 </div>
                 <!-- main notification links are placed inside of .sidebar-nav -->
-                <ul class="sidebar-nav">
-                    <li class=" active ">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a href="#sidebar-dashboard" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-home"></i>
-                            </span>
-                            Dashboard
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-dashboard" class="collapse  show ">
-                            <li class=""><a href="../dashboard/index.html">Analytics</a></li>
-                            <li class=" active "><a href="../dashboard/visits.html">Visits</a></li>
-                            <li class=""><a href="../dashboard/widgets.html">Widgets</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
+                <ul class="sidebar-nav">                    
+                    <li class="" id="terrMenu">
                         <a class="collapsed" href="#sidebar-territories" data-toggle="collapse" data-parent="#sidebar">
                             <span class="icon">
                                 <i class="fi flaticon-home"></i>
@@ -94,14 +80,14 @@
                             <li class=""><a href="#">Far East</a></li>
                             <li class=""><a href="#">South Asia</a></li>
                             <li class=""><a href="#">Middle East</a></li>
-                            <li class="">
+                            <li class="" >
                                 <a href="#sidebar-NorthAmerica" data-toggle="collapse" data-parent="#sidebar">
                                         North America
                                         <i class="toggle fa fa-angle-down"></i>
                                 </a>
                             </li>
 
-                                <ul id="sidebar-NorthAmerica" class="collapse  show ">
+                                <ul id="sidebar-NorthAmerica" class="collapse">
                                     <li class=""><a href="../dashboard/visits.html"> North America</a></li>
                                        <li class=""><a href="#">ALT</a></li>
                                         <li class=""><a href="#">BOS</a></li>
@@ -156,7 +142,7 @@
                                                 Directory
                                                 <i class="toggle fa fa-angle-down"></i>
                                     </a>
-
+                                  
                             </li>
                             <ul id="sidebar-Directory" class="collapse  show ">
                                     <li class=""><a href="#">Ellen</a></li>
@@ -168,273 +154,13 @@
                             <li class=""><a href="#">Training</a></li>
                         </ul>
                     </li>
-                    <li class="">
-                        <a href="../other/package.html">
-                            <span class="icon">
-                              <i class="fi flaticon-database-1"></i>
-                            </span>
-                            Sing Package
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="../other/profile.html">
-                            <span class="icon">
-                                <i class="fi flaticon-user"></i>
-                            </span>
-                            Profile
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="../other/inbox.html">
-                            <span class="icon">
-                                <i class="fi flaticon-paper-plane"></i>
-                            </span>
-                            Email
-                            <span class="badge bg-warning">
-                                9
-                            </span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="collapsed" href="#sidebar-pages" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-diamond"></i>
-                            </span>
-                            E-commerce
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-pages" class="collapse ">
-                            <li class=""><a href="../e-commerce/product_detail.html">Product Detail</a></li>
-                            <li class=""><a href="../e-commerce/product_grid.html">Product Grid</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- every .sidebar-nav may have a title -->
-                <h5 class="sidebar-nav-title">Template <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
-                <ul class="sidebar-nav">
-                    <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a class="collapsed" href="#sidebar-core" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-network"></i>
-                            </span>
-                            Core
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-core" class="collapse ">
-                            <li class=""><a href="../core/core_typography.html">Typography</a></li>
-                            <li class=""><a href="../core/core_colors.html">Colors</a></li>
-                            <li class=""><a href="../core/core_grid.html">Grid</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a class="collapsed" href="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-layers"></i>
-                            </span>
-                            UI Elements
-                            <sup class="text-warning fw-semi-bold">
-                                new
-                            </sup>
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-ui" class="collapse ">
-                            <li class=""><a href="../components/ui_alerts.html">Alerts</a></li>
-                            <li class=""><a href="../components/ui_badge.html">Badge</a></li>
-                            <li class=""><a href="../components/ui_buttons.html">Buttons</a></li>
-                            <li class=""><a href="../components/ui_card.html">Card</a></li>
-                            <li class=""><a href="../components/ui_carousel.html">Carousel</a></li>
-                            <li class=""><a href="../components/ui_jumbotron.html">Jumbotron</a></li>
-                            <li class=""><a href="../components/ui_icons.html">Icons</a></li>
-                            <li class=""><a href="../components/ui_list_groups.html">List Groups</a></li>
-                            <li class=""><a href="../components/ui_modal.html">Modal</a></li>
-                            <li class=""><a href="../components/ui_nav.html">Nav</a></li>
-                            <li class=""><a href="../components/ui_navbar.html">Navbar</a></li>
-                            <li class=""><a href="../components/ui_notifications.html">Notifications</a></li>
-                            <li><a href="../tables/tables_dynamic.html">Pagination</a></li>
-                            <li class=""><a href="../components/ui_popovers_tooltips.html">Popovers & Tooltips</a></li>
-                            <li class=""><a href="../components/ui_progress.html">Progress</a></li>
-                            <li class=""><a href="../components/ui_tabs_accordion.html">Tabs & Accordion</a></li>
-                            <li class=""><a href="../components/ui_toasts.html">Toasts
-                                <sup class="text-warning fw-semi-bold">
-                                    new
-                                </sup></a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a class="collapsed" href="#sidebar-forms" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-list"></i>
-                            </span>
-                            Forms
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-forms" class="collapse ">
-                            <li class=""><a href="../form/form_elements.html">Form Elements</a></li>
-                            <li class=""><a href="../form/form_validation.html">Form Validation</a></li>
-                            <li class=""><a href="../form/form_wizard.html">Form Wizard</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a class="collapsed" href="#sidebar-charts" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-controls"></i>
-                            </span>
-                            Charts
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-charts"
-                            class="collapse ">
-                            <li class="">
-                                <a href="../charts/charts.html">Charts Overview</a>
-                            </li>
-                            <li class="">
-                                <a href="../charts/flot.html">Flot Charts</a>
-                            </li>
-                            <li class="">
-                                <a href="../charts/morris.html">Morris Charts</a>
-                            </li>
-                            <li class="">
-                                <a href="../charts/rickshaw.html">Rickshaw Charts</a>
-                            </li>
-                            <li class="">
-                                <a href="../charts/sparkline.html">Sparkline Charts</a>
-                            </li>
-                            <li class="">
-                                <a class="no-pjax" href="../charts/d3_plain.html">D3 version 5 Charts</a>
-                            </li>
-                            <li class="">
-                                <a href="../charts/easy_pie.html">Easy Pie Charts</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a href="../other/grid.html">
-                            <span class="icon">
-                                <i class="fi flaticon-menu-4"></i>
-                            </span>
-                            Grid
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="collapsed" href="#sidebar-maps" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-map-location"></i>
-                            </span>
-                            Maps
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-maps" class="collapse ">
-                            <!-- data-no-pjax turns off pjax loading for this link. Use in case of complicated js loading on the
-                                 target page -->
-                            <li class=""><a href="../maps/maps_google.html" data-no-pjax>Google Maps</a></li>
-                            <li class=""><a href="../maps/maps_vector.html">Vector Maps</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <!-- an example of nested submenu. basic bootstrap collapse component -->
-                        <a class="collapsed" href="#sidebar-tables" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-equal-1"></i>
-                            </span>
-                            Tables
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-tables" class="collapse ">
-                            <li class=""><a href="../tables/tables_basic.html">Tables Basic</a></li>
-                            <li class=""><a href="../tables/tables_dynamic.html">Tables Dynamic</a></li>
-                        </ul>
-                    </li>
-                    <li class="">
-                        <a class="collapsed" href="#sidebar-extra" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-star"></i>
-                            </span>
-                            Extra
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-extra" class="collapse ">
-                            <li class=""><a href="../extra/calendar.html">Calendar</a></li>
-                            <li class=""><a href="../extra/invoice.html">Invoice</a></li>
-                            <li class=""><a href="../extra/login.html" target="_blank" data-no-pjax>Login Page</a></li>
-                            <li class=""><a href="../extra/error.html" target="_blank" data-no-pjax>Error Page</a></li>
-                            <li class=""><a href="../extra/gallery.html">Gallery</a></li>
-                            <li class=""><a href="../extra/search.html">Search Results</a></li>
-                            <li class=""><a href="../extra/time_line.html" data-no-pjax>Time Line</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="collapsed" href="#sidebar-levels" data-toggle="collapse" data-parent="#sidebar">
-                            <span class="icon">
-                                <i class="fi flaticon-folder-10"></i>
-                            </span>
-                            Menu Levels
-                            <i class="toggle fa fa-angle-down"></i>
-                        </a>
-                        <ul id="sidebar-levels" class="collapse">
-                            <li><a href="#">Level 1</a></li>
-                            <li>
-                                <a class="collapsed" href="#sidebar-sub-levels" data-toggle="collapse" data-parent="#sidebar-levels">
-                                    Level 2
-                                    <i class="toggle fa fa-angle-down"></i>
-                                </a>
-                                <ul id="sidebar-sub-levels" class="collapse">
-                                    <li><a href="#">Level 3</a></li>
-                                    <li><a href="#">Level 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <h5 class="sidebar-nav-title">Labels <a class="action-link" href="#"><i class="glyphicon glyphicon-plus"></i></a></h5>
-                <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
-                <ul class="sidebar-labels">
-                    <li>
-                        <a href="#">
-                            <!-- yep, .circle again -->
-                            <i class="fa fa-circle text-warning mr-xs"></i>
-                            <span class="label-name">My Recent</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-circle text-gray mr-xs"></i>
-                            <span class="label-name">Starred</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-circle text-danger mr-xs"></i>
-                            <span class="label-name">Background</span>
-                        </a>
-                    </li>
-                </ul>
-                <h5 class="sidebar-nav-title">Projects</h5>
-                <!-- A place for sidebar notifications & alerts -->
-                <div class="sidebar-alerts">
-                    <div class="alert">
-                        <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                        <span class="fw-normal">Sales Report</span> <br>
-                        <div class="progress progress-xs mt-2">
-                            <div class="progress-bar progress-bar-gray-light" role="progressbar" style="width: 16%" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <small>Calculating x-axis bias... 65%</small>
-                    </div>
-                    <div class="alert">
-                        <a href="#" class="close" data-dismiss="alert" aria-hidden="true">&times;</a>
-                        <span class="fw-normal">Personal Responsibility</span> <br>
-                        <div class="progress progress-xs mt-2">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 23%" aria-valuenow="23" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <small>Provide required notes</small>
-                    </div>
-                </div>
+                    
+                </ul>                
+                <!-- A place for sidebar notifications & alerts -->                
             </div>
         </nav>            <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
             <nav class="page-controls navbar navbar-dashboard">
-
+               
                 <div class="container-fluid">
                     <!-- .navbar-header contains links seen on xs & sm screens -->
                     <div class="navbar-header mr-md-3">
@@ -472,7 +198,7 @@
                             <i class="fa fa-circle text-gray"></i>
                         </a>
                     </div>
-
+            
                     <!-- this part is hidden for xs screens -->
                     <div class="navbar-header mobile-hidden">
                         <!-- search form! link it to your search server -->
@@ -912,84 +638,14 @@
                         <input class="form-control fs-sm" id="chat-sidebar-input" type="text"  placeholder="Type your message">
                     </footer>
                 </div>
-            </div>            <div class="theme-helper">
-                <section class="widget theme-helper-content">
-                    <header class="theme-helper-header d-flex p-0">
-                        <div class="theme-helper-toggler">
-                            <div class="theme-helper-spinner bg-warning text-white">
-                                <i class="la la-cog"></i>
-                                <i class="la la-cog fs-smaller"></i>
-                            </div>
-                        </div>
-                        <h6>Configuration</h6>
-                    </header>
-                    <div class="widget-body mt-3">
-                        <div class="theme-switcher d-flex justify-content-center">
-                            <div class="form-check abc-radio abc-radio-warning form-check-inline">
-                                <input class="form-check-input" type="radio" id="css-light" value="option2" name="css-light" checked aria-label="Sing Light">
-                                <label class="form-check-label" for="css-light"></label>
-                            </div>
-                            <div class="form-check abc-radio abc-radio-secondary mr-0 form-check-inline">
-                                <input class="form-check-input" type="radio" id="css-dark" value="option1" name="css-light" aria-label="Single Dark">
-                                <label class="form-check-label" for="css-dark"></label>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="https://flatlogic.com/admin-dashboards/sing-app-html5"
-                               target="_blank"
-                               role="button"
-                               class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
-                                Purchase
-                            </a>
-                            <a href="http://demo.flatlogic.com/sing-app/documentation/"
-                               target="_blank"
-                               role="button"
-                               class="btn btn-secondary btn-rounded-f btn-block fs-mini">
-                                Documentation
-                            </a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-lg">
-                            <a role="button"
-                               target="_blank"
-                               href="https://flatlogic.com/contact"
-                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
-                                <i class="glyphicon glyphicon-headphones mr-xs"></i>
-                                Support
-                            </a>
-                            <a role="button"
-                               target="_blank"
-                               href="https://github.com/flatlogic/sing-app"
-                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
-                                <i class="fa fa-github mr-xs"></i>
-                                Github
-                            </a>
-                        </div>
-                        <div class="mt-lg d-flex flex-column align-items-center theme-sharing">
-                            <span class="fs-sm">
-                                Thank you for sharing!
-                            </span>
-                            <div class="d-flex justify-content-center text-light mt-2">
-                                <a target="_blank"
-                                   href="https://twitter.com/intent/tweet?text=Admin%20dashboard%20template%20built%20with%20NodeJS,%20React%20and%20Bootstrap%204!&url=https://demo.flatlogic.com/sing-app/html-bs4/&via=flatlogic">
-                                    <i class="fa fa-twitter pr-1"></i>
-                                </a>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://demo.flatlogic.com/sing-app/html-bs4/"
-                                   target="_blank">
-                                    <i class="fa fa-facebook pl-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
+            </div>   
         <div class="content-wrap">
             <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
             <main id="content" class="content" role="main">
                 <!-- Page content -->
-        <h1 class="page-title">North America
+        <h1 class="page-title">North America 
             <small>
-                <small>QrewFitness</small>
+                <small>Key metrics</small>
             </small>
         </h1>
         <div class="row">
@@ -1001,11 +657,11 @@
                     <div class="widget-body">
                         <div id="map1" class="mapael">
                             <div class="stats">
-                                <h6 class="mt-3">Cabin Crew</h6>
-                                <p class="h2 no-margin"><span id="geo-locations-number">136</span> <i
-                                        class="fa fa-male"></i></p>
+                                <h6 class="mt-3">Qrew staff</h6>
+                                <p class="h2 no-margin"><span id="geo-locations-number">5250</span> <i
+                                        class="fa fa-map-marker"></i></p>
                             </div>
-                            <div class="map">
+                            <div class="map">                                                                                               
                                 <svg height="423.57142857142856" version="1.1" width="685" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; height: 423.571px;" viewBox="0 0 959 593" preserveAspectRatio="xMinYMin">
                                     <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2 and Mapael (http://neveldo.fr/mapael)</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
                                     <path class="mapstate" fill="#e4eaf1" stroke="#ccd8e3" d="M233.08751,519.30948L235.02744,515.75293L237.29070000000002,515.42961L237.61402,516.23791L235.51242000000002,519.30948L233.08751,519.30948ZM243.27217000000002,515.59127L249.41530000000003,518.1778400000001L251.51689000000002,517.8545200000001L253.13350000000003,513.9746500000001L252.48686000000004,510.5797700000001L248.28366000000003,510.0947900000001L244.24213000000003,511.8730600000001L243.27217000000005,515.5912700000001ZM273.9878,525.61427L277.706,531.1107400000001L280.13092,530.7874200000001L281.26255,530.3024400000002L282.7175,531.5957300000001L286.43571,531.4340700000001L287.40567999999996,529.9791200000001L284.49576999999994,528.2008500000001L282.55583999999993,524.4826300000001L280.4542399999999,520.92609L274.6344399999999,523.83599L273.98779999999994,525.61427ZM294.19545,534.5056400000001L295.48874,532.5657000000001L300.17691,533.5356600000001L300.82356000000004,533.0506800000002L306.96668000000005,533.6973200000002L306.64336000000003,534.9906200000003L304.05678,536.4455600000002L299.69193,536.1222400000003L294.19545,534.5056400000003ZM299.53027,539.67879L301.47020999999995,543.55866L304.54175999999995,542.4270300000001L304.86508999999995,540.81041L303.24848,538.7088200000001L299.53027,538.3855000000001L299.53027,539.67879ZM306.4817,538.5471600000001L308.74496,535.6372600000001L313.43313,538.0621800000001L317.79798,539.1938100000001L322.16284,541.9420500000001L322.16284,543.8819800000001L318.60630000000003,545.6602600000001L313.75645000000003,546.6302200000001L311.33154,545.1752700000001L306.48170000000005,538.5471600000001ZM323.13281,554.06663L324.74942,552.77335L328.14430999999996,554.3899700000001L335.74237999999997,557.9465100000001L339.13726999999994,560.0481000000001L340.75386999999995,562.4730200000001L342.6938099999999,566.8378700000002L346.73533999999995,569.4244500000002L346.4120199999999,570.7177500000003L342.53214999999994,573.9509700000002L338.32895999999994,575.4059200000003L336.87400999999994,574.7592800000002L333.80243999999993,576.5375400000003L331.3775299999999,579.7707700000003L329.1142699999999,582.6806700000003L327.3359899999999,582.5190100000003L323.77944999999994,579.9324300000003L323.4561299999999,575.4059200000003L324.1027699999999,572.9810000000002L322.4861599999999,567.3228600000002L320.3845599999999,565.5445800000002L320.2228999999999,562.9580000000002L322.4861599999999,561.9880400000002L324.58775999999995,558.9164800000002L325.07273999999995,557.9465100000002L323.45613,556.1682300000002L323.13280999999995,554.0666300000003Z" stroke-width="1.4000000000000001" stroke-linejoin="round" data-toggle="tooltip" title="HI" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="HI"></path>
@@ -1060,14 +716,14 @@
                                     <path class="mapstate" fill="#e4eaf1" stroke="#ccd8e3" d="M102.07324,7.6117734L106.43807,9.0667177L116.1377,11.814945999999999L124.7057,13.754871L144.7516,19.412988L167.70739,25.071104L182.93051,28.278277L169.29815,91.864088L156.85315,88.33877L141.34514,84.768091L126.11584999999998,84.801331L125.66027999999999,83.456632L120.06105999999998,85.635925L115.46562999999998,84.899181L113.31865999999998,83.315127L112.00544999999998,83.97310300000001L107.26978999999999,83.83286000000001L105.57142999999999,82.48322700000001L100.30838999999999,80.37092400000002L99.57341899999999,80.51784200000002L95.18429699999999,78.99339400000001L93.29099899999999,80.81077300000001L87.02509299999998,80.51204000000001L81.09939499999999,76.38633800000001L81.87835199999999,75.45357500000001L81.999575,67.77612300000001L79.717576,63.936422000000015L75.602368,63.32938200000002L74.924958,60.81876600000002L72.649446,60.361834000000016L69.094498,61.592410000000015L66.83125100000001,58.37316300000001L67.15457200000002,55.46327400000001L69.90280000000001,55.13995300000001L71.51940500000002,51.09844200000001L68.93283700000002,49.96681800000001L69.09449800000002,46.24862700000001L73.45933100000002,45.60198600000001L70.71110300000002,42.85375800000001L69.25615800000003,35.74069700000001L69.90280000000003,32.83080900000001L69.90280000000003,24.90944600000001L68.12453500000002,21.67623600000001L70.38778200000002,12.29992900000001L72.48936800000001,12.784910000000009L74.91427500000002,15.694799000000009L77.66250300000002,18.28136600000001L80.89571200000002,20.22129200000001L85.42220500000002,22.32287800000001L88.49375600000002,22.96952000000001L91.40364500000003,24.42446400000001L94.79851800000003,25.39442700000001L97.06176400000003,25.23276700000001L97.06176400000003,22.80785900000001L98.35504800000002,21.67623600000001L100.45663000000002,20.38295200000001L100.77996000000002,21.51457600000001L101.10328000000001,23.29284100000001L98.84002900000002,23.77782200000001L98.51670800000001,25.879408000000012L100.29497,27.33435300000001L101.42660000000001,29.759260000000012L102.07324000000001,31.69918500000001L103.52818,31.53752500000001L103.68984,30.24424100000001L102.71988,28.95095700000001L102.23490000000001,25.71774800000001L103.04320000000001,23.93948300000001L102.39656000000001,22.48453900000001L102.39656000000001,20.22129200000001L104.17483000000001,16.66476200000001L103.04320000000001,14.07819400000001L100.61829000000002,9.22838010000001L100.94162000000001,8.42007780000001L102.07324000000001,7.611775400000011ZM92.616548,13.590738L94.637312,13.429078L95.122294,14.803197L96.658073,13.186582000000001L99.002155,13.186582000000001L99.810458,14.722361000000001L98.274678,16.419801L98.92133,17.228113999999998L98.193853,19.248874999999998L96.81973400000001,19.653021C96.81973400000001,19.653021,95.93059600000001,19.733860999999997,95.93059600000001,19.410536C95.93059600000001,19.087215,97.385551,16.823958,97.385551,16.823958L95.688111,16.258141000000002L95.36479,17.713095000000003L94.637312,18.359737000000003L93.10153,16.096480000000003L92.616548,13.590738000000004Z" stroke-width="1.4000000000000001" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="WA" data-toggle="tooltip" title="WA"></path>
                                     <path class="mapstate" fill="#e4eaf1" stroke="#ccd8e3" d="M144.69443,382.19813L148.63451,381.70950999999997L150.12055,379.69807L150.66509000000002,376.75698L147.11357,376.16686L146.5994,375.49863999999997L147.0769,373.46632999999997L146.91762,372.87665999999996L148.84019,372.25706999999994L151.88297,369.42438999999996L152.46453,364.42929L153.84443,361.02718L155.78771999999998,358.86091999999996L159.30658999999997,357.27124999999995L160.96097999999998,355.66641999999996L161.02967999999998,353.55758L160.03635,352.97756999999996L159.0132,351.90484L157.85798,346.05638999999996L155.17278,341.2263L155.73859,337.7213L153.31901,336.69199L84.25768799999999,232.51358999999997L103.15979999999999,164.91209999999995L36.07993699999999,149.21413999999996L34.57304099999999,153.94737999999995L34.41137999999999,161.38375999999994L29.238244999999985,173.18496999999994L26.166696999999985,175.77153999999993L25.843375999999985,176.90315999999993L24.065109999999986,177.71146999999993L22.610165999999985,181.91463999999993L21.801863999999984,185.14784999999995L24.550091999999985,189.35101999999995L26.166696999999985,193.55418999999995L27.298319999999986,197.11071999999996L26.974998999999986,203.57713999999996L25.196733999999985,206.64868999999996L24.550091999999985,212.46846999999997L23.580128999999985,216.18665999999996L25.358393999999986,220.06650999999997L28.106621999999987,224.59299999999996L30.369868999999987,229.44281999999995L31.663151999999986,233.48432999999994L31.339831999999987,236.71753999999996L31.016510999999987,237.20251999999996L31.016510999999987,239.30409999999998L36.67462699999999,245.60885999999996L36.18964599999999,248.03376999999998L35.54300399999999,250.29701999999997L34.89636199999999,252.23693999999998L35.05802199999999,260.48163L37.159607999999984,264.19982L39.099533999999984,266.78638L41.84776199999998,267.27137L42.81772499999998,270.01959L41.686101999999984,273.57612L39.58451499999998,275.19273L38.452891999999984,275.19273L37.64458999999999,279.07257999999996L38.129570999999984,281.98247L41.362780999999984,286.34729999999996L42.979384999999986,291.68209999999993L44.434328999999984,296.37024999999994L45.727612999999984,299.44179999999994L49.12248299999998,305.2615799999999L50.57742699999998,307.84813999999994L51.06240899999998,310.75802999999996L52.67901299999998,311.72799L52.67901299999998,314.1529L51.870710999999986,316.09283L50.09244599999999,323.20589L49.607463999999986,325.14581L52.03237199999999,327.89403999999996L56.23554399999999,328.37901999999997L60.76203699999999,330.15729L64.641888,332.25887L67.551777,332.25887L70.461665,335.33042L73.048232,340.18024L74.179856,342.44348L78.059707,344.54507L82.909521,345.35337L84.364465,347.45495999999997L85.011107,350.68816999999996L83.556163,351.33480999999995L83.879484,352.30476999999996L87.112695,353.11306999999994L89.860923,353.27473999999995L93.020812,351.58788999999996L96.900666,355.79105999999996L97.708968,358.05431L100.29554,362.25748L100.61886,365.49069L100.61886,374.86699999999996L101.10383999999999,376.64525999999995L111.12678999999999,378.10020999999995L130.84936,380.84842999999995L144.6944,382.19812999999994ZM56.559218000000016,338.48145L57.85250600000001,340.01723L57.690846000000015,341.31052L54.457625000000014,341.22972L53.89181100000001,340.01725999999996L53.24516700000001,338.56230999999997L56.55921800000001,338.48150999999996ZM58.499150000000014,338.48145L59.71160800000001,337.83481L63.26815100000001,339.9364L66.33971100000001,341.14885L65.45057500000001,341.79551L60.92406600000002,341.55301L59.307456000000016,339.9364L58.499150000000014,338.48145ZM79.191764,358.28493L80.97002900000001,360.62901L81.77834200000001,361.59898L83.31412100000001,362.16479L83.87992800000002,360.70984L82.90996500000001,358.93156999999997L80.24256200000002,356.91080999999997L79.19176400000002,357.07246999999995L79.19176400000002,358.28493ZM77.73680900000001,366.93379L79.51508500000001,370.08618L80.72754300000001,372.02612L79.27258900000001,372.2686L77.97930500000001,371.05615C77.97930500000001,371.05615,77.25182800000002,369.6012,77.25182800000002,369.19704C77.25182800000002,368.79290000000003,77.25182800000002,367.01462000000004,77.25182800000002,367.01462000000004L77.73680900000002,366.93382Z" stroke-width="1.4000000000000001" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="CA" data-toggle="tooltip" title="CA"></path>
 
-
+                                    
                                     <!-- Boston -->
                                     <circle cx="875.4066970662708" cy="155.54022513681647" fill="none" r="5" stroke="#62bd19" stroke-width="2">
                                         <animate attributeName="r" from="5" to="16.5" dur="1.5s" begin="0s" repeatCount="indefinite"/>
                                         <animate attributeName="opacity" from="1" to="0" dur="1.5s" begin="0s" repeatCount="indefinite"/>
                                     </circle>
                                     <circle cx="875.4066970662708" cy="155.54022513681647" r="5" fill="#62bd19" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="bo" class="mapPlot" data-toggle="tooltip" title="Boston"></circle>
-
+                                    
 
                                     <!-- JFK -->
                                     <circle cx="846.4066970662708" cy="200.54022513681647" fill="none" r="8.5" stroke="#62bd19" stroke-width="2">
@@ -1081,7 +737,7 @@
                                         <animate attributeName="r" from="5" to="16.5" dur="1.5s" begin="0s" repeatCount="indefinite"/>
                                         <animate attributeName="opacity" from="1" to="0" dur="1.5s" begin="0s" repeatCount="indefinite"/>
                                     </circle>
-                                    <circle cx="700.582261678233" cy="393.93382621457084" r="5" fill="#62bd19" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="atl" class="mapPlot" data-toggle="tooltip" title="Atlanta"></circle>
+                                    <circle cx="700.582261678233" cy="393.93382621457084" r="5" fill="#62bd19" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="atl" class="mapPlot" data-toggle="tooltip" title="Atlanta"></circle>                                    
 
                                     <!-- Chicago -->
                                     <circle cx="612.0364545645764" cy="210.54654167913634" fill="none" r="5.5" stroke="#62bd19" stroke-width="2">
@@ -1097,9 +753,9 @@
                                     </circle>
                                     <circle cx="80.61045335786257" cy="340.35300831940435" r="5" fill="#62bd19" stroke="#ffffff" stroke-width="0" stroke-linejoin="round" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); stroke-linejoin: round;" data-id="lm" class="mapPlot" data-toggle="tooltip" title="LAX" onclick=" window.location.href = 'widgets.html'"></circle>
 
+                                    
 
-
-
+                                  
 
                                 </svg>
                             </div>
@@ -1113,8 +769,6 @@
                         <h5>
                             Top
                             <span class="fw-semi-bold">Airports</span>
-                            by
-                            <span class="fw-semi-bold">capacity</span>
                         </h5>
                         <div class="widget-controls widget-controls-hover">
                             <a href="#"><i class="la la-cog"></i></a>
@@ -1126,61 +780,61 @@
                         <p>Status: <strong>Live</strong></p>
                         <p>
                             <span class="circle bg-warning text-white"><i class="fa fa-map-marker"></i></span>
-                            5 Airports, 61 Routes
+                            12 Cities, 256 Routes
                         </p>
                         <div class="row progress-stats">
                             <div class="col-md-9">
                                 <medium>LAX</medium>
-                                <p class="description deemphasize">2,718,311 seats @ RASM = $0.15</p>
+                                <p class="description deemphasize">3,000,000 seats</p>
                                 <div class="bg-white progress progress-xs">
                                     <div class="progress-bar bg-primary js-progress-animate" style="width: 0;"
-                                         data-width="84%"></div>
+                                         data-width="60%"></div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <span class="status square square-lg bg-body-light">
-                                    <small><span id="percent-1">84</span>%</small>
+                                    <small><span id="percent-1">92</span>%</small>
                                 </span>
                             </div>
                         </div>
                         <div class="row progress-stats">
                             <div class="col-md-9">
                                 <medium>JFK</medium>
-                                <p class="description deemphasize">1,813,845 seats @ RASM = $0.22</p>
+                                <p class="description deemphasize">1,000,000 seats</p>
                                 <div class="bg-white progress progress-xs">
                                     <div class="progress-bar bg-danger js-progress-animate" style="width: 0;"
-                                         data-width="71%"></div>
+                                         data-width="39%"></div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <span class="status square square-lg bg-body-light">
-                                    <small><span id="percent-2">71</span>%</small>
+                                    <small><span id="percent-2">85</span>%</small>
                                 </span>
                             </div>
                         </div>
                         <div class="row progress-stats">
                             <div class="col-md-9">
                                 <medium>BOS</medium>
-                                <p class="description deemphasize">1,241,813 seats @ RASM = $0.19</p>
+                                <p class="description deemphasize">1,000,000 seats</p>
                                 <div class="bg-white progress progress-xs">
                                     <div class="progress-bar bg-success js-progress-animate" style="width: 0;"
-                                         data-width="65%"></div>
+                                         data-width="80%"></div>
                                 </div>
                             </div>
                             <div class="col-md-3 text-center">
                                 <span class="status square square-lg bg-body-light">
-                                    <small><span id="percent-3">65</span>%</small>
+                                    <small><span id="percent-3">79</span>%</small>
                                 </span>
                             </div>
                         </div>
-                        <h6 class="fw-semi-bold mt">QrewFit Sensing</h6>
+                        <h6 class="fw-semi-bold mt">Map Distributions</h6>
                         <p>Tracking: <strong>Active</strong></p>
                         <p>
-                            <span class="circle bg-warning text-white"><i class="fa fa-plane"></i></span>
-                           Total predicted passengers today: <strong>2,194</strong>
+                            <span class="circle bg-warning text-white"><i class="fa fa-cog"></i></span>
+                           Total passengers today: 2500,000
                         </p>
                         <div class="input-group mt">
-                            <input type="text" class="form-control" placeholder="Search Qrew directory">
+                            <input type="text" class="form-control" placeholder="Search Qrew">
                             <span class="input-group-append">
                                 <button type="submit" class="btn btn-default">
                                     <i class="fa fa-search text-gray"></i>
@@ -1211,11 +865,11 @@
                                 <p class="value">76.38%</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Quarter</h6>
+                                <h6 class="name fs-sm">Montly</h6>
                                 <p class="value">10.38%</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Week</h6>
+                                <h6 class="name fs-sm">24h</h6>
                                 <p class="value">3.38%</p>
                             </div>
                         </div>
@@ -1243,16 +897,16 @@
                     <div class="widget-body">
                         <div class="stats-row">
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Last 24h</h6>
-                                <p class="value">65%</p>
+                                <h6 class="name fs-sm">Overall Values</h6>
+                                <p class="value">17 567 318</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Last 48h</h6>
-                                <p class="value">79%</p>
+                                <h6 class="name fs-sm">Montly</h6>
+                                <p class="value">55 120</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Last week</h6>
-                                <p class="value">72%</p>
+                                <h6 class="name fs-sm">24h</h6>
+                                <p class="value">9 695</p>
                             </div>
                         </div>
                         <div class="bg-gray-lighter progress progress-xs">
@@ -1261,7 +915,7 @@
                         <p>
                             <span class="circle bg-warning text-white"><i class="la la-chevron-down"></i></span>
                             <span class="fw-semi-bold">8% lower</span>
-                            than yesterday
+                            than last month
                         </p>
                     </div>
                 </section>
@@ -1280,16 +934,16 @@
                     <div class="widget-body">
                         <div class="stats-row">
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Current</h6>
-                                <p class="value">85%</p>
+                                <h6 class="name fs-sm">Overcome T.</h6>
+                                <p class="value">104.85%</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Last 48h</h6>
-                                <p class="value">79%</p>
+                                <h6 class="name fs-sm">Takeoff Angle</h6>
+                                <p class="value">14.29&deg;</p>
                             </div>
                             <div class="stat-item">
-                                <h6 class="name fs-sm">Last 24h</h6>
-                                <p class="value">67%</p>
+                                <h6 class="name fs-sm">World Pop.</h6>
+                                <p class="value">7,211M</p>
                             </div>
                         </div>
                         <div class="bg-gray-lighter progress progress-xs">
@@ -1297,8 +951,8 @@
                         </div>
                         <p>
                             <span class="circle bg-warning text-white"><i class="la la-plus"></i></span>
-                            <span class="fw-semi-bold">12% higher</span>
-                            than yesterday
+                            <span class="fw-semi-bold">8 734 higher</span>
+                            than last month
                         </p>
                     </div>
                 </section>
@@ -1308,7 +962,7 @@
             <div class="col-lg-4">
                 <section class="widget">
                     <header>
-                       Airport Fit-to-Fly risks
+                       Airport Fit-to-Fly scores
                         <div class="widget-controls">
                             <a href="#"><i class="la la-refresh"></i></a>
                             <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
@@ -1319,40 +973,33 @@
                             <a class="list-group-item" href="#">
                                 <span class="thumb-sm float-left mx-3">
                                     <img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="...">
-                                    <!-- <img class="rounded-circle" src="../demo/img/people/LAX.png" alt="..."> -->
-                                    <i class="status status-bottom bg-danger"></i>
+                                    <i class="status status-bottom bg-success"></i>
                                 </span>
-                                <!-- <h6 class="no-margin">LAX, 56%</h6> -->
-                                <h6 class="no-margin">Ellen Hodges 56% (LAX)</h6>
-                                <!-- <h6 class="name fs-sm no-margin">Supervisor: Ellen Hodge</h6> -->
-                                  <p class="help-block text-ellipsis no-margin">26 staff: 12 male, 14 female</p>
-                               <!-- <p class="help-block text-ellipsis no-margin fw-semi-bold">26 staff</p>12 male, 14 female -->
+                                <h6 class="no-margin">LAX, 56%</h6>
+                                <p class="help-block text-ellipsis no-margin">26 staff: 12 male, 14 female</p>
                             </a>
                             <a class="list-group-item" href="#">
                                 <span class="thumb-sm float-left mx-3">
                                     <img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="...">
-                                    <i class="status status-bottom bg-warning"></i>
+                                    <i class="status status-bottom bg-success"></i>
                                 </span>
-                                <!-- <h6 class="no-margin">JFK, 78%</h6> -->
-                                <h6 class="no-margin">Ali Parsons 78% (JFK)</h6>
+                                <h6 class="no-margin">JFK, 78%</h6>
                                 <p class="help-block text-ellipsis no-margin">18 staff: 10 male, 8 female</p>
                             </a>
                             <a class="list-group-item" href="#">
                                 <span class="thumb-sm float-left mx-3">
                                     <img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="...">
-                                    <i class="status status-bottom bg-success"></i>
+                                    <i class="status status-bottom bg-warning"></i>
                                 </span>
-                                <!-- <h6 class="no-margin">BOS, 82%</h6> -->
-                                <h6 class="no-margin">Jenny Li 82% (BOS)</h6>
+                                <h6 class="no-margin">BOS, 82%</h6>
                                 <p class="help-block text-ellipsis no-margin">26 staff: 12 male, 14 female</p>
                             </a>
                             <a class="list-group-item" href="#">
                                 <span class="thumb-sm float-left mx-3">
                                     <img class="rounded-circle" src="../demo/img/people/a5.jpg" alt="...">
-                                    <i class="status status-bottom bg-success"></i>
+                                    <i class="status status-bottom bg-danger"></i>
                                 </span>
-                                <h6 class="no-margin">Daniel Kane 84% (ALT)</h6>
-                                <!-- <h6 class="no-margin">ALT, 84%</h6> -->
+                                <h6 class="no-margin">ALT, 84%</h6>
                                 <p class="help-block text-ellipsis no-margin">21 staff: 9 male, 12 female</p>
                             </a>
                         </div>
@@ -1366,34 +1013,20 @@
                 <section class="widget">
                     <header>
                         <h6>
-                            Fit-to-Fly <span class="fw-semi-bold">Realtime</span>
+                            Fit-to-Fly <span class="fw-semi-bold">Stats</span>
                         </h6>
                         <div class="widget-controls">
                             <a href="#" data-widgster="close"><i class="la la-remove"></i></a>
                         </div>
                     </header>
                     <div class="widget-body">
-                        <!-- <h3>$720 Earned</h3> -->
-                        <!-- <h3>66,193 readings</h3> -->
-                        <!-- <h3>New sync events: <span id="custom-geo-locations-number">100</span></h3> -->
-                        <!-- <h3><span id="custom-geo-locations-number">100</span></h3> -->
-                        <h2>
-                           Current <span class="fw-semi-bold">76%</span>
-                     </h2>
-                        <h4>New sync events: <span id="custom-geo-locations-number">100</span></h4>
-
-
-                        <!-- <p class="text-muted mb mt-sm">
+                        <h3>$720 Earned</h3>
+                        <p class="text-muted mb mt-sm">
                             Target <span class="fw-semi-bold">$820</span> day earnings
                             is <span class="fw-semi-bold">96%</span> reached.
-                        </p> -->
-
-                        <p class="text-muted mb mt-sm">
-                        <br>
-                        Minimum safety score of <span class="fw-semi-bold">90%</span> has <span class="fw-semi-bold">not</span> been met.
                         </p>
                     </div>
-
+                    
                     <div class="widget-body mt-xlg">
                         <div id="rickshaw" class="chart-overflow-bottom"></div>
                     </div>
@@ -1413,12 +1046,11 @@
                         <div class="list-group">
                             <a href="#" class="list-group-item text-ellipsis">
                                 <span class="badge badge-pill bg-warning float-right">6:45</span>
-                                <span class="fw-semi-bold">LAX</span> → <span class="fw-semi-bold">DOH</span> (nonstop)
+                                LAX -> DOH
                             </a>
                             <a href="#" class="list-group-item text-ellipsis">
                                 <span class="badge badge-pill bg-success float-right">9:41</span>
-                                <span class="fw-semi-bold">JFK</span> → <span class="fw-semi-bold">BOS</span> (direct, 1 stop)
-                                <!-- <span class="fw-semi-bold">JFK</span> direct to <span class="fw-semi-bold">BOS</span> (1 stop) -->
+                                JFK - BOS
                             </a>
                         </div>
                     </div>
@@ -1426,7 +1058,7 @@
             </div>
         </div>
                     <footer class="content-footer">
-                        2019 &copy; JKIT
+                        Test app- Made by <a href="#" rel="nofollow" target="_blank">Indra</a>
                     </footer>
             </main>
         </div>
@@ -1436,16 +1068,16 @@
         </div>
 
 
-        <!-- <script language="javascript">
+        <script language="javascript">
             $(document).ready(function(){
                 $("path").mouseover(function() {
-                    $(this).attr("fill", "#e9ebf6");
-                    $(this).attr('data-tooltip', 'w00t');
+                    $(this).attr("fill", "#e9ebf6");                    
+                    $(this).attr('data-tooltip', 'w00t');               
                 });
                 $(".mapstate").mouseout(function() {$(this).attr("fill", "#e4eaf1");});
                 $(".mapPlot").mouseover(function() {$(this).attr('data-tooltip', 'w00t');});
             });
-        </script> -->
+        </script>
 
         <!-- common libraries. required for every page-->
         <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
@@ -1479,7 +1111,16 @@
         <script src="../../bower_components/jquery-animateNumber/jquery.animateNumber.min.js"></script>
 
         <!-- page specific js -->
-        <script src="../js/dashboard/visits.js"></script>
+        <script src="../js/dashboard/visits.js"></script>        
+        
+        <script language="javascript">
+            $("#terrMenu").addClass("open")            
+            $("#sidebar-territories").addClass("show");
+            $("#sidebar-territories > li:first-child").removeClass("active");            
+            $("#sidebar-NorthAmerica").addClass("show");
+            $("#sidebar-NorthAmerica > li:first-child").addClass("active")
+        </script>
+
 
     </body>
 </html>
