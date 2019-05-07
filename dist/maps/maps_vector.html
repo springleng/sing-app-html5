@@ -78,7 +78,7 @@
                                 </a>
                             </li>
 
-                                <ul id="sidebar-NorthAmerica" class="collapse  show ">
+                                <ul id="sidebar-NorthAmerica" class="collapse">
                                     <li class=""><a href="../dashboard/visits.html"> North America</a></li>
                                        <li class=""><a href="#">ALT</a></li>
                                         <li class=""><a href="#">BOS</a></li>
@@ -629,24 +629,29 @@
                 </div>
             </div>
 
-
         <div class="content-wrap">
             <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
             <main id="content" class="content" role="main">
                 <!-- Page content -->
-            <div id="vmap" class="content-map">                
+        <div id="vmap" class="content-map">
             </div>
             <header class="page-title">
-                <h1 class="no-margin mb-sm">Vector <span class="fw-semi-bold">Maps</span></h1>
+                <h1 class="no-margin mb-sm">QrewFitness <span class="fw-semi-bold">Global</span></h1>
                 <p class="page-title fs-sm no-margin">
-                    <span class="fw-semi-bold">1 656 843</span>
-                    <span class="ml-xs circle bg-gray"><i class="text-gray-lighter fa fa-sm fa-circle"></i></span>
+
+                    <span class="ml-xs circle bg-gray"><i class="text-gray-lighter fa fa-sm fa-map-marker"></i></span>
+                    <!-- <span class="fw-semi-bold">172 Hubs</span> -->
+                    172 <span class="fw-semi-bold">Airports</span>. 4,310 <span class="fw-semi-bold">Cabin crew</span>.
+                    <!-- 172 <span class="fw-semi-bold">Hubs</span>
+                    <br>
+                    <span class="ml-xs circle bg-gray"><i class="text-gray-lighter fa fa-sm fa-map-marker"></i></span>
+                    4,310 <span class="fw-semi-bold">Crew</span> -->
                 </p>
             </header>
         </div>
-                    <footer class="content-footer">
+                    <!-- <footer class="content-footer">
                         Sing App - Bootstrap 4.2.1 Admin Dashboard Template - Made by <a href="https://flatlogic.com" rel="nofollow" target="_blank">Flatlogic</a>
-                    </footer>
+                    </footer> -->
             </main>
         </div>
         <!-- The Loader. Is shown when pjax happens -->
@@ -685,41 +690,3 @@
         </script>
     </body>
 </html>
-
-<!---
-//On scroll call the draw function
-var percentDone = 0;
-$(function() {
-  loop();
-});
-
-function loop(){
-  setTimeout(function() {
-    drawLines()
-    if(percentDone < 1) loop();
-  }, 100);
-}
-
-//If you have more than one SVG per page this will pick it up
-function drawLines() {
-  $.each($(".draw-me"), function(i, val) {
-    var line = val;
-    drawLine($(this), line);
-  });
-}
-
-//draw the line
-function drawLine(container, line) {
-  var length = 0;
-  var pathLength = line.getTotalLength();
-  var distanceFromTop = container.offset().top - $(window).scrollTop();
-  //var percentDone = 1 - (distanceFromTop / $(window).height());
-  length = percentDone * pathLength;
-  line.style.strokeDasharray = [length, pathLength].join(' ');
-  console.log("strokeDasharray: " + [length, pathLength].join(' '));
-  percentDone += 0.01
-  console.log("line drawn by "+percentDone+"%");
-}
-
-
-    --->
