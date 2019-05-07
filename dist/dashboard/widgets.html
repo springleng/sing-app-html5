@@ -626,77 +626,7 @@
                         <input class="form-control fs-sm" id="chat-sidebar-input" type="text"  placeholder="Type your message">
                     </footer>
                 </div>
-            </div>            <div class="theme-helper">
-                <section class="widget theme-helper-content">
-                    <header class="theme-helper-header d-flex p-0">
-                        <div class="theme-helper-toggler">
-                            <div class="theme-helper-spinner bg-warning text-white">
-                                <i class="la la-cog"></i>
-                                <i class="la la-cog fs-smaller"></i>
-                            </div>
-                        </div>
-                        <h6>Configuration</h6>
-                    </header>
-                    <div class="widget-body mt-3">
-                        <div class="theme-switcher d-flex justify-content-center">
-                            <div class="form-check abc-radio abc-radio-warning form-check-inline">
-                                <input class="form-check-input" type="radio" id="css-light" value="option2" name="css-light" checked aria-label="Sing Light">
-                                <label class="form-check-label" for="css-light"></label>
-                            </div>
-                            <div class="form-check abc-radio abc-radio-secondary mr-0 form-check-inline">
-                                <input class="form-check-input" type="radio" id="css-dark" value="option1" name="css-light" aria-label="Single Dark">
-                                <label class="form-check-label" for="css-dark"></label>
-                            </div>
-                        </div>
-                        <div class="mt-4">
-                            <a href="https://flatlogic.com/admin-dashboards/sing-app-html5"
-                               target="_blank"
-                               role="button"
-                               class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
-                                Purchase
-                            </a>
-                            <a href="http://demo.flatlogic.com/sing-app/documentation/"
-                               target="_blank"
-                               role="button"
-                               class="btn btn-secondary btn-rounded-f btn-block fs-mini">
-                                Documentation
-                            </a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-lg">
-                            <a role="button"
-                               target="_blank"
-                               href="https://flatlogic.com/contact"
-                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
-                                <i class="glyphicon glyphicon-headphones mr-xs"></i>
-                                Support
-                            </a>
-                            <a role="button"
-                               target="_blank"
-                               href="https://github.com/flatlogic/sing-app"
-                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
-                                <i class="fa fa-github mr-xs"></i>
-                                Github
-                            </a>
-                        </div>
-                        <div class="mt-lg d-flex flex-column align-items-center theme-sharing">
-                            <span class="fs-sm">
-                                Thank you for sharing!
-                            </span>
-                            <div class="d-flex justify-content-center text-light mt-2">
-                                <a target="_blank"
-                                   href="https://twitter.com/intent/tweet?text=Admin%20dashboard%20template%20built%20with%20NodeJS,%20React%20and%20Bootstrap%204!&url=https://demo.flatlogic.com/sing-app/html-bs4/&via=flatlogic">
-                                    <i class="fa fa-twitter pr-1"></i>
-                                </a>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://demo.flatlogic.com/sing-app/html-bs4/"
-                                   target="_blank">
-                                    <i class="fa fa-facebook pl-1"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
-
         <div class="content-wrap">
             <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
             <main id="content" class="content" role="main">
@@ -713,22 +643,44 @@
                         <div class="row">
                             <div class="col-3">
                                 <span class="widget-icon">
-                                    <i class="fi flaticon-like text-primary"></i>
+                                    <i class="fi flaticon-magic-wand text-info"></i>
                                 </span>
                             </div>
                             <div class="col-9">
-                                <h6 class="no-margin">USERS GROWTH</h6>
-                                <p class="h2 no-margin fw-normal">4,332</p>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="57">
+                                    <div>
+                                        <h6 class="no-margin">PASSENGERS TODAY</h6>
+                                        <p class="h2 no-margin fw-normal">12,324</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="no-margin">PASSENGERS YESTERDAY</h6>
+                                        <p class="h2 no-margin fw-normal">11,885</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <h6 class="no-margin">Registrations</h6>
-                                <p class="value5">+830</p>
+                                <h6 class="no-margin">New Visitors</h6>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">1,332</p>
+                                    </div>
+                                    <div>
+                                        <p class="value5">20.1%</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6 fs-sm">
+                            <div class="col-6">
                                 <h6 class="no-margin">Bounce Rate</h6>
-                                <p class="value5">4.5%</p>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">217</p>
+                                    </div>
+                                    <div>
+                                        <p class="value5">2.3%</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -786,50 +738,45 @@
             <div class="col-lg-3 col-md-6">
                 <section class="widget widget-card">
                     <div class="widget-body clearfix">
-                        <div class="live-tile" data-mode="fade" data-speed="750" data-delay="4000" data-height="100">
-                            <div class="bg-white">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <span class="widget-icon">
-                                            <i class="fi flaticon-notebook-4"></i>
-                                        </span>
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="widget-icon">
+                                    <i class="fi flaticon-magic-wand text-info"></i>
+                                </span>
+                            </div>
+                            <div class="col-9">
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="57">
+                                    <div>
+                                        <h6 class="no-margin">VISITS TODAY</h6>
+                                        <p class="h2 no-margin fw-normal">12,324</p>
                                     </div>
-                                    <div class="col-9">
-                                        <h6 class="no-margin">ORDERS</h6>
-                                        <p class="h2 no-margin fw-normal">82,765</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="no-margin">Avg. Time</h6>
-                                        <p class="value5">2:56</p>
-                                    </div>
-                                    <div class="col-6">
-                                        <h6 class="no-margin">Last Week</h6>
-                                        <p class="value5">374</p>
+                                    <div>
+                                        <h6 class="no-margin">VISITS YESTERDAY</h6>
+                                        <p class="h2 no-margin fw-normal">11,885</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-white">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <span class="widget-icon">
-                                            <i class="fi flaticon-shuffle"></i>
-                                        </span>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="no-margin">New Visitors</h6>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">1,332</p>
                                     </div>
-                                    <div class="col-9">
-                                        <h6 class="no-margin">PICKED ORDERS</h6>
-                                        <p class="h2 no-margin fw-normal">13.8%</p>
+                                    <div>
+                                        <p class="value5">20.1%</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h6 class="no-margin">Basic</h6>
-                                        <p class="value5">3,692</p>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="no-margin">Bounce Rate</h6>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">217</p>
                                     </div>
-                                    <div class="col-6">
-                                        <h6 class="no-margin">Advanced</h6>
-                                        <p class="value5">1,441</p>
+                                    <div>
+                                        <p class="value5">2.3%</p>
                                     </div>
                                 </div>
                             </div>
@@ -843,22 +790,44 @@
                         <div class="row">
                             <div class="col-3">
                                 <span class="widget-icon">
-                                    <i class="fi flaticon-diamond text-success"></i>
+                                    <i class="fi flaticon-magic-wand text-info"></i>
                                 </span>
                             </div>
                             <div class="col-9">
-                                <h6 class="no-margin">TOTAL PROFIT</h6>
-                                <p class="h2 no-margin fw-normal">$7,448</p>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="57">
+                                    <div>
+                                        <h6 class="no-margin">VISITS TODAY</h6>
+                                        <p class="h2 no-margin fw-normal">12,324</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="no-margin">VISITS YESTERDAY</h6>
+                                        <p class="h2 no-margin fw-normal">11,885</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <h6 class="no-margin">Last Month</h6>
-                                <p class="value5">$83,541</p>
+                                <h6 class="no-margin">New Visitors</h6>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">1,332</p>
+                                    </div>
+                                    <div>
+                                        <p class="value5">20.1%</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-6">
-                                <h6 class="no-margin">Last Week</h6>
-                                <p class="value5">$17,926</p>
+                                <h6 class="no-margin">Bounce Rate</h6>
+                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                    <div>
+                                        <p class="value5">217</p>
+                                    </div>
+                                    <div>
+                                        <p class="value5">2.3%</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -871,11 +840,11 @@
                     <div class="widget-image text-white">
                         <img src="../demo/img/pictures/18.jpg">
                         <h4 class="title">
-                            <span class="fw-normal">Sunnyvale</span>, CA
+                            <span class="fw-normal">Los Angeles</span>, CA
                         </h4>
                         <div class="info text-right">
                             <i class="fa fa-map-marker h2 no-margin mr-xs"></i>
-                            <h6 class="no-margin mt-xs fs-mini">FLORIDA, USA</h6>
+                            <h6 class="no-margin mt-xs fs-mini">LA, USA</h6>
                             <p class="fs-smaller">9:41 am</p>
                         </div>
                         <div class="forecast">
@@ -979,17 +948,17 @@
                             <p class="chart-value-change">+2.04 (1.69%)</p>
                             <div id="chart-changes"></div>
                         </div>
-                        <h5 class="chart-title"><span class="fw-normal">Salt Lake City</span>, Utah</h5>
+                        <h5 class="chart-title"><span class="fw-normal">LAX Financial</span>, <strong>KPIs</strong></h5>
                         <p class="deemphasize">Today 13:34</p>
                         <div class="mt">
                             <div class="row">
                                 <div class="col-6">
-                                    <p class="h5 no-margin">18.7M</p>
-                                    <p class="deemphasize">Shares Traded</p>
+                                    <p class="h5 no-margin">162,844</p>
+                                    <p class="deemphasize">RPK to date</p>
                                 </div>
                                 <div class="col-6 text-right">
-                                    <p class="h5 no-margin">19.9B</p>
-                                    <p class="deemphasize">Market Cap</p>
+                                    <p class="h5 no-margin">17,319</p>
+                                    <p class="deemphasize">ASK to date</p>
                                 </div>
                             </div>
                         </div>
@@ -1001,7 +970,7 @@
                                 </div>
                                 <div class="col-6 text-right">
                                     <span id="chart-changes-year"></span>
-                                    <p class="deemphasize">GOOG</p>
+                                    <p class="deemphasize">Filled seats</p>
                                 </div>
                             </div>
                         </div>
@@ -1079,7 +1048,7 @@
                 <section class="widget pb-0">
                     <header>
                         <h4>
-                            Support <strong>Requests</strong>
+                            Cabin Crew <strong>Fitness Stats</strong>
                         </h4>
                         <div class="widget-controls">
                             <a href="#"><i class="la la-cog"></i></a>
@@ -1092,11 +1061,11 @@
                                 <tr class="text-muted">                                    
                                     <th scope="col"><span class=" pl-3">PICTURE</span></th>
                                     <th scope="col"><span class=" pl-3">NAME</span></th>
-                                    <th scope="col">EMAIL</th>
-                                    <th scope="col">PRODUCT</th>
-                                    <th scope="col">PRICE</th>
-                                    <th scope="col">DATE</th>
-                                    <th scope="col">CITY</th>
+                                    <th scope="col">ROLE</th>
+                                    <th scope="col">EXPERIENCE</th>
+                                    <th scope="col">SLEEP</th>
+                                    <th scope="col">ALERT</th>
+                                    <th scope="col">SCORE</th>
                                     <th scope="col">STATUS</th>
                                 </tr>
                             </thead>
@@ -1104,52 +1073,52 @@
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="..."></span></th>    
                                     <th class="pl-4 fw-normal"><a href="../extra/time_line.html">Mark Otto</a></th>
-                                    <td>ottoto@wxample.com</td>
-                                    <td>ON the Road</td>
-                                    <td>$25 224.2</td>
-                                    <td>11 May 2017</td>
-                                    <td>Otsego</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-info">Sent</button></td>
+                                    <td>Junior flight attendant</td>
+                                    <td>2 months</td>
+                                    <td>3h 21m</td>
+                                    <td>6/10</td>
+                                    <td>51%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-danger">Not fit</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a2.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Jacob Thornton</th>
-                                    <td>thornton@wxample.com</td>
-                                    <td>HP Core i7</td>
-                                    <td>$1 254.2</td>
-                                    <td>4 Jun 2017</td>
-                                    <td>Fivepointville</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-info">Sent</button></td>
+                                    <td>Junior flight attendant</td>
+                                    <td>6 months</td>
+                                    <td>6h 42m</td>
+                                    <td>7/10</td>
+                                    <td>72%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-warning">Moderate</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a3.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Larry the Bird</th>
-                                    <td>bird@wxample.com</td>
-                                    <td>Air Pro</td>
-                                    <td>$1 570.0</td>
-                                    <td>27 Aug 2017</td>
-                                    <td>Leadville North</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Pending</button></td>
+                                    <td>Senior flight attendant</td>
+                                    <td>2 years</td>
+                                    <td>8h</td>
+                                    <td>9/10</td>
+                                    <td>90%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Ready</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Joseph May</th>
-                                    <td>josephmay@wxample.com</td>
-                                    <td>Version Control</td>
-                                    <td>$5 224.5</td>
-                                    <td>19 Feb 2018</td>
-                                    <td>Seaforth</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-danger">Declined</button></td>
+                                    <td>Junior flight attendant</td>
+                                    <td>10 months</td>
+                                    <td>5h 30m</td>
+                                    <td>6.5/10</td>
+                                    <td>65%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-danger">Not fit</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a5.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Peter Horadnia</th>
-                                    <td>horadnia@wxample.com</td>
-                                    <td>Let's Dance</td>
-                                    <td>$43 594.7</td>
-                                    <td>1 Mar 2018</td>
-                                    <td>Hanoverton</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-info">Sent</button></td>
+                                    <td>Flight attendant</td>
+                                    <td>1 year</td>
+                                    <td>7h 25m</td>
+                                    <td>8/10</td>
+                                    <td>85%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Ready</button></td>
                                 </tr>
                             </tbody>
                         </table>
