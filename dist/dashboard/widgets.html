@@ -25,7 +25,6 @@
     <body class="">
         <!--
           Main sidebar seen on the left. may be static or collapsing depending on selected state.
-        
             * Collapsing - navigation automatically collapse when mouse leaves it and expand when enters.
             * Static - stays always open.
         -->
@@ -52,7 +51,7 @@
                     </a>
                     <!-- #notifications-dropdown-menu goes here when screen collapsed to xs or sm -->
                 </div>
-                <!-- main notification links are placed inside of .sidebar-nav -->
+                 <!-- main notification links are placed inside of .sidebar-nav -->
                 <ul class="sidebar-nav">                    
                     <li id="terrMenu" class="">
                         <a class="collapsed" href="#sidebar-territories" data-toggle="collapse" data-parent="#sidebar" id="terrMenuItem">
@@ -63,7 +62,7 @@
                             <i class="toggle fa fa-angle-down"></i>
                         </a>
                         <ul id="sidebar-territories" class="collapse">
-                            <li class=" active "><a href="../maps/maps_vector.html">World map</a></li>
+                            <li class=""><a href="../maps/maps_vector.html">World map</a></li>
                             <li class=""><a href="#">Africa</a></li>
                             <li class=""><a href="#">Central Asia</a></li>
                             <li class=""><a href="#">Europe</a></li>
@@ -144,11 +143,10 @@
                         </ul>
                     </li>                    
                 </ul> 
-                
             </div>
         </nav>            <!-- This is the white navigation bar seen on the top. A bit enhanced BS navbar. See .page-controls in _base.scss. -->
             <nav class="page-controls navbar navbar-dashboard">
-               
+
                 <div class="container-fluid">
                     <!-- .navbar-header contains links seen on xs & sm screens -->
                     <div class="navbar-header mr-md-3">
@@ -186,7 +184,7 @@
                             <i class="fa fa-circle text-gray"></i>
                         </a>
                     </div>
-            
+
                     <!-- this part is hidden for xs screens -->
                     <div class="navbar-header mobile-hidden">
                         <!-- search form! link it to your search server -->
@@ -626,7 +624,77 @@
                         <input class="form-control fs-sm" id="chat-sidebar-input" type="text"  placeholder="Type your message">
                     </footer>
                 </div>
+            </div>            <div class="theme-helper">
+                <section class="widget theme-helper-content">
+                    <header class="theme-helper-header d-flex p-0">
+                        <div class="theme-helper-toggler">
+                            <div class="theme-helper-spinner bg-warning text-white">
+                                <i class="la la-cog"></i>
+                                <i class="la la-cog fs-smaller"></i>
+                            </div>
+                        </div>
+                        <h6>Configuration</h6>
+                    </header>
+                    <div class="widget-body mt-3">
+                        <div class="theme-switcher d-flex justify-content-center">
+                            <div class="form-check abc-radio abc-radio-warning form-check-inline">
+                                <input class="form-check-input" type="radio" id="css-light" value="option2" name="css-light" checked aria-label="Sing Light">
+                                <label class="form-check-label" for="css-light"></label>
+                            </div>
+                            <div class="form-check abc-radio abc-radio-secondary mr-0 form-check-inline">
+                                <input class="form-check-input" type="radio" id="css-dark" value="option1" name="css-light" aria-label="Single Dark">
+                                <label class="form-check-label" for="css-dark"></label>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="https://flatlogic.com/admin-dashboards/sing-app-html5"
+                               target="_blank"
+                               role="button"
+                               class="btn btn-warning btn-rounded-f btn-block fs-mini text-white">
+                                Purchase
+                            </a>
+                            <a href="http://demo.flatlogic.com/sing-app/documentation/"
+                               target="_blank"
+                               role="button"
+                               class="btn btn-secondary btn-rounded-f btn-block fs-mini">
+                                Documentation
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-between mt-lg">
+                            <a role="button"
+                               target="_blank"
+                               href="https://flatlogic.com/contact"
+                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
+                                <i class="glyphicon glyphicon-headphones mr-xs"></i>
+                                Support
+                            </a>
+                            <a role="button"
+                               target="_blank"
+                               href="https://github.com/flatlogic/sing-app"
+                               class="btn btn-outline-default btn-rounded-f fs-mini text-muted">
+                                <i class="fa fa-github mr-xs"></i>
+                                Github
+                            </a>
+                        </div>
+                        <div class="mt-lg d-flex flex-column align-items-center theme-sharing">
+                            <span class="fs-sm">
+                                Thank you for sharing!
+                            </span>
+                            <div class="d-flex justify-content-center text-light mt-2">
+                                <a target="_blank"
+                                   href="https://twitter.com/intent/tweet?text=Admin%20dashboard%20template%20built%20with%20NodeJS,%20React%20and%20Bootstrap%204!&url=https://demo.flatlogic.com/sing-app/html-bs4/&via=flatlogic">
+                                    <i class="fa fa-twitter pr-1"></i>
+                                </a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://demo.flatlogic.com/sing-app/html-bs4/"
+                                   target="_blank">
+                                    <i class="fa fa-facebook pl-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
+
         <div class="content-wrap">
             <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
             <main id="content" class="content" role="main">
@@ -637,55 +705,55 @@
         <!--</ol>-->
         <!--<h2 class="page-title">Widgets - <span class="fw-semi-bold">Options</span></h2>-->
         <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <section class="widget widget-card">
-                    <div class="widget-body clearfix">
-                        <div class="row">
-                            <div class="col-3">
-                                <span class="widget-icon">
-                                    <i class="fi flaticon-magic-wand text-info"></i>
-                                </span>
-                            </div>
-                            <div class="col-9">
-                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="57">
-                                    <div>
-                                        <h6 class="no-margin">PASSENGERS TODAY</h6>
-                                        <p class="h2 no-margin fw-normal">12,324</p>
-                                    </div>
-                                    <div>
-                                        <h6 class="no-margin">PASSENGERS YESTERDAY</h6>
-                                        <p class="h2 no-margin fw-normal">11,885</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <h6 class="no-margin">New Visitors</h6>
-                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
-                                    <div>
-                                        <p class="value5">1,332</p>
-                                    </div>
-                                    <div>
-                                        <p class="value5">20.1%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <h6 class="no-margin">Bounce Rate</h6>
-                                <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
-                                    <div>
-                                        <p class="value5">217</p>
-                                    </div>
-                                    <div>
-                                        <p class="value5">2.3%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+             <div class="col-lg-3 col-md-6">
+                 <section class="widget widget-card">
+                     <div class="widget-body clearfix">
+                         <div class="row">
+                             <div class="col-3">
+                                 <span class="widget-icon">
+                                     <i class="fi flaticon-magic-wand text-info"></i>
+                                 </span>
+                             </div>
+                             <div class="col-9">
+                                 <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="57">
+                                     <div>
+                                         <h6 class="no-margin">PASSENGERS TODAY</h6>
+                                         <p class="h2 no-margin fw-normal">12,324</p>
+                                     </div>
+                                     <div>
+                                         <h6 class="no-margin">PASSENGERS YESTERDAY</h6>
+                                         <p class="h2 no-margin fw-normal">11,885</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="row">
+                             <div class="col-6">
+                                 <h6 class="no-margin">New Visitors</h6>
+                                 <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                     <div>
+                                         <p class="value5">1,332</p>
+                                     </div>
+                                     <div>
+                                         <p class="value5">20.1%</p>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-6">
+                                 <h6 class="no-margin">Bounce Rate</h6>
+                                 <div class="live-tile" data-mode="carousel" data-speed="750" data-delay="3000" data-height="24">
+                                     <div>
+                                         <p class="value5">217</p>
+                                     </div>
+                                     <div>
+                                         <p class="value5">2.3%</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </section>
+             </div>
             <div class="col-lg-3 col-md-6">
                 <section class="widget widget-card">
                     <div class="widget-body clearfix">
@@ -834,7 +902,7 @@
                 </section>
             </div>
         </div>
-        <div class="row">            
+        <div class="row">
             <div class="col-lg-6">
              <section class="widget" style="padding-bottom: 8px">
                     <div class="widget-image text-white">
@@ -935,7 +1003,7 @@
                         </section>
                     </div>
                 </div>
-            </div>  
+            </div>
             <div class="col-lg-3">
                 <section class="widget widget-chart-changes">
                     <div class="widget-controls">
@@ -944,12 +1012,13 @@
                     </div>
                     <div class="widget-body">
                         <div class="chart bg-success btlr btrr">
+                              <!-- <p class="chart-value-change">Passenger Revenue</p> -->
                             <p class="chart-value"><i class="fa fa-caret-up"></i> 352.79</p>
                             <p class="chart-value-change">+2.04 (1.69%)</p>
                             <div id="chart-changes"></div>
                         </div>
-                        <h5 class="chart-title"><span class="fw-normal">LAX Financial</span>, <strong>KPIs</strong></h5>
-                        <p class="deemphasize">Today 13:34</p>
+                        <h5 class="chart-title"><span class="fw-normal">LAX Financial</span> <span class="fw-semi-bold">KPIs</span></h5>
+                        <p class="deemphasize">Last updated 3:34 PM</p>
                         <div class="mt">
                             <div class="row">
                                 <div class="col-6">
@@ -1041,7 +1110,7 @@
                         </p>
                     </div>
                 </section>
-            </div>    
+            </div>
         </div>
         <div class="row">
             <div class="col-12 mb-lg">
@@ -1058,20 +1127,20 @@
                     <div class="widget-body p-0 support table-wrapper">
                         <table class="table table-striped mb-0">
                             <thead>
-                                <tr class="text-muted">                                    
+                                <tr class="text-muted">
                                     <th scope="col"><span class=" pl-3">PICTURE</span></th>
                                     <th scope="col"><span class=" pl-3">NAME</span></th>
                                     <th scope="col">ROLE</th>
-                                    <th scope="col">EXPERIENCE</th>
-                                    <th scope="col">SLEEP</th>
-                                    <th scope="col">ALERT</th>
-                                    <th scope="col">SCORE</th>
+                                    <th scope="col">Experience</th>
+                                    <th scope="col">Sleep</th>
+                                    <th scope="col">Alert</th>
+                                    <th scope="col">Score</th>
                                     <th scope="col">STATUS</th>
                                 </tr>
                             </thead>
                             <tbody class="text-dark">
                                 <tr>
-                                    <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="..."></span></th>    
+                                    <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a1.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal"><a href="../extra/time_line.html">Mark Otto</a></th>
                                     <td>Junior flight attendant</td>
                                     <td>2 months</td>
@@ -1094,41 +1163,41 @@
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a3.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Larry the Bird</th>
                                     <td>Senior flight attendant</td>
-                                    <td>2 years</td>
-                                    <td>8h</td>
-                                    <td>9/10</td>
-                                    <td>90%</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Ready</button></td>
+                                    <td>5 months</td>
+                                    <td>6h 12m</td>
+                                    <td>8/10</td>
+                                    <td>76%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-warning">Moderate</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a4.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Joseph May</th>
-                                    <td>Junior flight attendant</td>
-                                    <td>10 months</td>
-                                    <td>5h 30m</td>
-                                    <td>6.5/10</td>
-                                    <td>65%</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-danger">Not fit</button></td>
+                                    <td>Senior flight attendant</td>
+                                    <td>11 months</td>
+                                    <td>8h 49m</td>
+                                    <td>8/10</td>
+                                    <td>82%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Fit to fly</button></td>
                                 </tr>
                                 <tr>
                                     <th class="text-center"><span class="thumb"><img class="rounded-circle" src="../demo/img/people/a5.jpg" alt="..."></span></th>
                                     <th class="pl-4 fw-normal">Peter Horadnia</th>
-                                    <td>Flight attendant</td>
-                                    <td>1 year</td>
-                                    <td>7h 25m</td>
+                                    <td>Senior flight attendant</td>
+                                    <td>16 months</td>
+                                    <td>7h 5m</td>
                                     <td>8/10</td>
-                                    <td>85%</td>
-                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Ready</button></td>
+                                    <td>87%</td>
+                                    <td><button class="btn btn-xs p-1 px-3 btn-success">Fit to fly</button></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </section>
             </div>
-        </div>    
-    
+        </div>
+
             <footer class="content-footer">
-                Sing App - Bootstrap 4.2.1 Admin Dashboard Template - Made by <a href="https://flatlogic.com" rel="nofollow" target="_blank">Flatlogic</a>
+                2019 &copy; JKIT
             </footer>
     </main>
     </div>
