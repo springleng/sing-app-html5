@@ -7,9 +7,9 @@ $(function(){
             focusOn:{
                 x: 0.1359,
                 y: 0.4,
-                scale: 1.5
+                scale: 1
             },
-            zoomMin:0.85,
+            zoomMin:1,
             hoverColor: false,
             regionStyle:{
                 initial: {
