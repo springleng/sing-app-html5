@@ -56,7 +56,7 @@ $(function(){
                 {latLng: [40.71, -74.00], name: 'New York'},
 
                 /** Europe**/
-                {latLng: [42.5, 1.51], name: 'Andorra'},                                
+                {latLng: [42.5, 1.51], name: 'Andorra'},
                 {latLng: [43.73, 7.41], name: 'Monaco'},
                 {latLng: [47.14, 9.52], name: 'Liechtenstein'},
                 {latLng: [43.93, 12.46], name: 'San Marino'},
@@ -89,7 +89,7 @@ $(function(){
                 /** Australia **/
                 {latLng: [-33.86, 151.20], name: 'Sydney'},
                 {latLng: [-31.95, 115.86], name: 'Perth'},
-                
+
             ]
         });
     }
@@ -101,4 +101,3 @@ $(function(){
     pageLoad();
     SingApp.onPageLoad(pageLoad);
 });
-
